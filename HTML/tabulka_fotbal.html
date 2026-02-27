@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Výsledková tabulka</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rozpis fotbalového turnaje</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">Rozpis turnaje</th>
+            </tr>
+            <tr>
+                <th>Datum</th>
+                <th>Čas</th>
+                <th>Tým A</th>
+                <th>Tým B</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">15. 10. 2023</td>
+                <td>10:00</td>
+                <td>AC Sparta</td>
+                <td>SK Slavia</td>
+            </tr>
+            <tr>
+                <td>12:30</td>
+                <td>FC Baník</td>
+                <td>FK Jablonec</td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td>SK Sigma</td>
+                <td>FC Viktoria</td>
+            </tr>
+            <tr>
+                <td>16. 10. 2023</td>
+                <td>14:00</td>
+                <td>SK Slavia</td>
+                <td>FC Baník</td>
+            </tr>
+            <tr>
+                <td rowspan="2">17. 10. 2023</td>
+                <td>11:00</td>
+                <td>FK Jablonec</td>
+                <td>AC Sparta</td>
+            </tr>
+            <tr>
+                <td>13:30</td>
+                <td>FC Viktoria</td>
+                <td>SK Sigma</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Výsledková tabulka soutěže</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Tým 1</th>
+                <th>Tým 2</th>
+                <th>Výsledek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>AC Sparta</td>
+                <td>SK Slavia</td>
+                <td>2:1</td>
+            </tr>
+            <tr>
+                <td>FC Baník</td>
+                <td>FK Jablonec</td>
+                <td colspan="1">1:1</td>
+            </tr>
+            <tr>
+                <td>SK Sigma</td>
+                <td>FC Viktoria</td>
+                <td>3:0</td>
+            </tr>
+            <tr>
+                <td>FK Teplice</td>
+                <td>FK Mladá Boleslav</td>
+                <td colspan="1">0:0</td>
+            </tr>
+            <tr>
+                <td>FC Slovan Liberec</td>
+                <td>FK Pardubice</td>
+                <td>2:1</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Ceník produktů</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">Ceník našich produktů</th>
+            </tr>
+            <tr>
+                <th>Produkt</th>
+                <th>Cena (Kč)</th>
+                <th>Sleva (%)</th>
+                <th>Celková cena (Kč)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Notebook</td>
+                <td>15,000</td>
+                <td>10</td>
+                <td>13,500</td>
+            </tr>
+            <tr>
+                <td>18,000</td>
+                <td>5</td>
+                <td>17,100</td>
+            </tr>
+            <tr>
+                <td>Smartphone</td>
+                <td>8,000</td>
+                <td>0</td>
+                <td>8,000</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tablet</td>
+                <td>5,000</td>
+                <td>15</td>
+                <td>4,250</td>
+            </tr>
+            <tr>
+                <td>7,000</td>
+                <td>10</td>
+                <td>6,300</td>
+            </tr>
+            <tr>
+                <td>9,000</td>
+                <td>5</td>
+                <td>8,550</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
