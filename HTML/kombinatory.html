@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombinátory v CSS</title>
+    <style>
+        /* 1. Potomkový selektor */
+        section p {
+            color: red;
+        }
+
+        /* 2. Dětský selektor */
+        article > p {
+            color: blue;
+        }
+
+        /* 3. Sousední sourozenecký selektor */
+        h2 + p {
+            font-weight: bold;
+        }
+
+        /* 4. Obecný sourozenecký selektor */
+        h2 ~ p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Nadpis sekce</h2>
+        <p>První odstavec.</p>
+        <p>Druhý odstavec.</p>
+        <div>
+            <p>Odstavec uvnitř divu.</p>
+        </div>
+    </section>
+
+    <article>
+        <h2>Nadpis článku</h2>
+        <p>První odstavec článku.</p>
+        <p>Druhý odstavec článku.</p>
+    </article>
+</body>
+</html>
