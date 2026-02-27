@@ -1,0 +1,19 @@
+/* 1. Potomkový selektor (mezera) */
+section p {
+    color: red;
+}
+
+/* 2. Dětský selektor (>) */
+article > p {
+    color: blue;
+}
+
+/* 3. Sousední sourozenecký selektor (+) */
+h2 + p {
+    font-weight: bold;
+}
+
+/* 4. Obecný sourozenecký selektor (~) */
+h2 ~ p {
+    font-style: italic;
+}

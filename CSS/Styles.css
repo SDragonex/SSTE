@@ -1,0 +1,35 @@
+/* Úkol 1*/
+.text {
+    color: purple;
+}
+
+.highlight {
+    color: black !important;
+}
+
+/* Úkol 2*/
+p {
+    color: blue;
+}
+
+#container p {
+    color: brown;
+}
+
+/* Úkol 3*/
+body {
+    color: gray;
+}
+
+#container {
+    color: pink;
+}
+
+/* Úkol 4*/
+.highlight {
+    color: orange;
+}
+
+#container p.highlight {
+    color: lightblue;
+}
