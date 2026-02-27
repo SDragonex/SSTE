@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulajda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: cornflowerblue;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        }
+        input {
+            width: 100px;
+            margin: 10px;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        }
+            button {
+            width: 50px;
+            height: 40px;
+            margin: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function calculate(operator) {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            let result;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                result = 'Zadejte prosím obě čísla!';
+            }
+            else {
+                switch (operator) {
+                    case '+':
+                        result = num1 + num2;
+                        break;
+                    case '-':
+                        result = num1 - num2;
+                        break;
+                    case '*':
+                        result = num1 * num2;
+                        break;
+                    case '/':
+                        if (num2 === 0) {
+                        result = 'Nelze dělit nulou!';
+                        }
+                        else {
+                        result = num1 / num2;
+                        }
+                        break;
+                    default:
+                        result = 'Neplatná operace';
+                }
+            }
+            document.getElementById('result').textContent = 'Výsledek: ' + result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Kalkulajda</h1>
+
+    <input type="number" id="num1" placeholder="Číslo 1">
+    <input type="number" id="num2" placeholder="Číslo 2">
+    <div>
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate('*')">×</button>
+        <button onclick="calculate('/')">÷</button>
+    </div>
+
+    <div id="result">Výsledek: </div>
+
+
+</body>
+</html>
