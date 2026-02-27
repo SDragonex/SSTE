@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulář pro shromažďování informací</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            display: inline-block;
+            background-color: #1e1e1e;
+            font-size: larger;
+            font-weight: bold;
+            margin: 15px;
+            padding: 50px;
+            border-radius: 15px;
+            width: 80vh;
+            text-align: left;
+            box-shadow: 0 0 25px rgba(0, 191, 255, 0.5);
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            background-color: #2a2a2a;
+            color: deepskyblue;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: rgb(0, 191, 255);
+            outline: none;
+        }
+        button {
+            background-color: deepskyblue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+            transition: transform 0.3s;
+            margin: 0 auto;
+            text-align: center;
+        }
+        button:hover {
+            transform: scale(1.25);
+            transition: transform 0.3s;
+            box-shadow: 0 0 25px rgba(0, 191, 255, 0.5)
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Formulář pro shromažďování informací</h1>
+        
+        <div>
+            <label for="jmeno">Jméno:</label>
+            <input type="text" id="jmeno" placeholder="Petr" required>
+        </div>
+        
+        <div>
+            <label for="prijmeni">Příjmení:</label>
+            <input type="text" id="prijmeni" placeholder="Novák" required>
+        </div>
+        
+        <div>
+            <label for="narozeni">Datum narození:</label>
+            <input type="date" id="narozeni" required>
+        </div>
+        
+        <div>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" placeholder="petrnovak@email.cz" required>
+        </div>
+        
+        <div>
+            <label for="telefon">Telefonní číslo:</label>
+            <input type="tel" id="telefon" placeholder="+420 123 456 789" required>
+        </div>
+        
+        <div>
+            <label for="ulice">Ulice:</label>
+            <input type="text" id="ulice" placeholder="Např. Hlavní 123" required>
+        </div>
+        <div>
+            <label for="mesto">Město:</label>
+            <input type="text" id="mesto" placeholder="Praha" required>
+        </div>
+        <div>
+            <label for="psc">PSČ:</label>
+            <input type="text" id="psc" placeholder="123 45" required>
+        </div>
+        
+        <div>
+            <label for="pohlavi">Pohlaví:</label>
+            <select id="pohlavi" required>
+                <option value="">Vyberte...</option>
+                <option value="muz">Muž</option>
+                <option value="zena">Žena</option>
+                <option value="jine">Jiné</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="vzdeleni">Vzdělání:</label>
+            <select id="vzdeleni" required>
+                <option value="">Vyberte...</option>
+                <option value="zakladni">Základní</option>
+                <option value="stredni">Střední</option>
+                <option value="vyssi">Vyšší odborné</option>
+                <option value="vysoke">Vysoké</option>
+                <option value="jine">Jiné</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="zamestnani">Zaměstnání:</label>
+            <input type="text" id="zamestnani" placeholder="Např. Programátor" required>
+        </div>
+        
+        <div>
+            <label for="cislouctu">Číslo účtu:</label>
+            <input type="text" id="cislouctu" placeholder="1234 5678 9012 3456" required>
+        </div>
+        
+        <div>
+            <label for="poznamka">Poznámky:</label>
+            <textarea id="poznamka" rows="4" placeholder="Zde můžete napsat další informace..."></textarea>
+        </div>
+        
+        <div>
+            <label for="hobby">Hobby:</label>
+            <input type="text" id="hobby" placeholder="Např. Čtení, Sport" required>
+        </div>
+        
+        <div>
+            <label for="socialni">Sociální sítě:</label>
+            <input type="text" id="socialni" placeholder="Např. Facebook, Instagram" required>
+        </div>
+        
+        <div>
+            <label for="zajmy">Zájmy:</label>
+            <textarea id="zajmy" rows="3" placeholder="Co vás zajímá?"></textarea>
+        </div>
+        
+        <button type="submit" id="odeslat">Odeslat</button>
+    </form>
+</body>
+</html>
