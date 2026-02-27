@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuláře</title>
+</head>
+<body>
+
+<h2>Rezervace jízdenky na autobus/vlak</h2>
+<form>
+    <label for="name">Jméno a příjmení:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="phone">Telefon:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <label for="departure">Místo odjezdu:</label>
+    <select id="departure" name="departure" required>
+        <option value="mesto1">Město 1</option>
+        <option value="mesto2">Město 2</option>
+    </select><br>
+
+    <label for="arrival">Místo příjezdu:</label>
+    <select id="arrival" name="arrival" required>
+        <option value="mesto1">Město 1</option>
+        <option value="mesto2">Město 2</option>
+    </select><br>
+
+    <label for="date">Datum a čas odjezdu:</label>
+    <input type="datetime-local" id="date" name="date" required><br>
+
+    <label for="passengers">Počet cestujících:</label>
+    <input type="number" id="passengers" name="passengers" required><br>
+
+    <label>Třída:</label>
+    <input type="radio" id="standard" name="class" value="standard" required>
+    <label for="standard">Standard</label>
+    <input type="radio" id="business" name="class" value="business">
+    <label for="business">Business</label>
+    <input type="radio" id="premium" name="class" value="premium">
+    <label for="premium">Premium</label><br>
+
+    <label for="seat">Možnost výběru místa (číslo sedadla):</label>
+    <input type="text" id="seat" name="seat"><br>
+
+    <button type="submit">Odeslat</button>
+</form>
+
+<h2>Přihláška na sportovní akci</h2>
+<form>
+    <label for="name">Jméno a příjmení:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="dob">Datum narození:</label>
+    <input type="date" id="dob" name="dob" required><br>
+
+    <label for="category">Kategorie:</label>
+    <select id="category" name="category" required>
+        <option value="beh">Běh</option>
+        <option value="plavani">Plavání</option>
+        <option value="cyklistika">Cyklistika</option>
+    </select><br>
+
+    <label for="jersey">Číslo dresu:</label>
+    <input type="text" id="jersey" name="jersey"><br>
+
+    <label for="emergency_contact">Nouzový kontakt (jméno + telefon):</label>
+    <input type="text" id="emergency_contact" name="emergency_contact" required><br>
+
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">Souhlas s podmínkami</label><br>
+
+    <button type="submit">Odeslat</button>
+</form>
+
+<h2>Formulář pro žádost o zaměstnání</h2>
+<form>
+    <label for="name">Jméno a příjmení:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="phone">Telefon:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <label for="position">Pozice, o kterou se uchází:</label>
+    <select id="position" name="position" required>
+        <option value="pozice1">Pozice 1</option>
+        <option value="pozice2">Pozice 2</option>
+    </select><br>
+
+    <label for="cover_letter">Motivační dopis:</label>
+    <textarea id="cover_letter" name="cover_letter" required></textarea><br>
+
+    <label for="resume">Nahrání životopisu:</label>
+    <input type="file" id="resume" name="resume" required><br>
+
+    <input type="checkbox" id="data_processing" name="data_processing" required>
+    <label for="data_processing">Souhlas se zpracováním osobních údajů</label><br>
+
+    <button type="submit">Odeslat</button>
+</form>
+
+<h2>Online kvíz</h2>
+<form>
+    <label for="name">Jméno (nepovinné pole):</label>
+    <input type="text" id="name" name="name"><br>
+
+    <h3>Otázky:</h3>
+    <label for="question1">Otázka 1:</label>
+    <input type="radio" id="q1a" name="question1" value="a">
+    <label for="q1a">Odpověď A</label>
+    <input type="radio" id="q1b" name="question1" value="b">
+    <label for="q1b">Odpověď B</label><br>
+
+    <label for="question2">Otázka 2:</label>
+    <input type="radio" id="q2a" name="question2" value="a">
+    <label for="q2a">Odpověď A</label>
+    <input type="radio" id="q2b" name="question2" value="b">
+    <label for="q2b">Odpověď B</label><br>
+
+    <label for="open_question">Otevřená otázka:</label>
+    <textarea id="open_question" name="open_question"></textarea><br>
+
+    <button type="submit">Odeslat</button>
+</form>
+
+<h2>Formulář pro rezervaci stolu v restauraci</h2>
+<form>
+    <label for="name">Jméno:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="phone">Telefon:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <label for="reservation_date">Datum a čas rezervace:</label>
+    <input type="datetime-local" id="reservation_date" name="reservation_date" required><br>
+
+    <label for="number_of_people">Počet osob:</label>
+    <input type="number" id="number_of_people" name="number_of_people" required><br>
+
+    <label for="special_requests">Speciální požadavky:</label>
+    <textarea id="special_requests" name="special_requests"></textarea><br>
+
+    <button type="submit">Odeslat</button>
+</form>
+
+</body>
+</html>
