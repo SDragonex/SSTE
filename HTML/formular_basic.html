@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulář</title>
+</head>
+<body>
+    <form>
+        <label for="Jmeno">Jméno:</label>
+        <input id="Jmeno" type="text" name="Jmeno" placeholder="Vaše Jméno"><br>
+
+        <label for="Vek">Věk:</label>
+        <input id="Vek" type="number" name="Vek" placeholder="Váš věk"><br>
+        
+        <label for="Email">Email:</label>
+        <input id="Email" type="email" name="Email" value="@"><br>
+
+        <label for="Pass">Heslo:</label>
+        <input if="Pass" type="password" name="Heslo"><br>
+
+        Fakturace:
+        <label for="Mesicni">Měsíční</label>
+        <input id="Mesicni" type="radio" name="Fakturace">
+        <label for="Rocni">Roční</label>
+        <input id="Rocni" type="radio" name="Fakturace"><br>
+
+        <label for="Pohlavi">Pohlaví</label>
+        <select>
+            <option>Vyberte</option>
+            <option>Muž</option>
+            <option>Žena</option>
+        </select><br>
+
+        <label for="Poznamka">Poznámka:</label>
+        <textarea name="Poznamka" placeholder="Napište nám"></textarea><br>
+
+        <label for="Agree">Souhlasím s podmínkami:</label>
+        <input id="Agree" type="checkbox" name="Agree" required><br>
+
+        <input type="submit" value="Zaregistorvat">
+        <button>Zaregistrovat <img src="img/registrovat_icon.png" height="15"></button><br>
+
+        <label for="Soubor">Nahrajte soubor:</label>
+        <input id="Soubor" type="file" name="Soubor"><br>
+
+    </form>
+</body>
+</html>
