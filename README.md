@@ -56,8 +56,8 @@ Je potřeba lokální server, například:
 
 ## 👨‍🎓 Autor
 
-* Jméno: *Dany Chaker*
-* Škola: **SŠTE Brno**
+* Jméno: ***Dany Chaker***
+* Škola: *SŠTE Brno*
 * Obor: *Informační technologie*
 
 ---
