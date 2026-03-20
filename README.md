@@ -12,7 +12,7 @@ Projekty slouží k procvičení webových technologií a programování.
 * 🎨 CSS3
 * ⚙️ JavaScript
 * 🐘 PHP
-* 🗄️ (případně MySQL – pokud používáš databázi)
+* 🗄️ MySQL
 
 ---
 
